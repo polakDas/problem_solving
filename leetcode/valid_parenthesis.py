@@ -1,6 +1,3 @@
-from operator import truediv
-
-
 def isValid(s: str) -> bool:
     if len(s) % 2:
         return False
