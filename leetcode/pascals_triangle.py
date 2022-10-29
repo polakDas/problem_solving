@@ -1,6 +1,6 @@
 # Leetcode problem no 118. Pascal's Triangle
 
-# I just love this solution. The idea of a temporary array with first and last empty index is just awesome.
+# I just love this solution. The idea of a temporary array with first and last index with zero is just awesome.
 # Video link of solve: https://youtu.be/nPVEaB3AjUM
 
 class Solution:
@@ -8,7 +8,7 @@ class Solution:
         # Assign the first value
         result = [[1]]
 
-        for i in range(numRows - 1):
+        for i in range(1, numRows):
             temp = [0] + result[-1] + [0]   # Assign value zero in first and last index
             row = []
 
