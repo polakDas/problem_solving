@@ -19,6 +19,6 @@ class Solution:
 if __name__ == '__main__':
     s = "()[]{}"
     s = "(]"
-    s="["
+    # s="["
     solve = Solution()
     print(solve.isValid(s))
