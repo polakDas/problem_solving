@@ -1,0 +1,7 @@
+<iframe
+  width="800"
+  height="500"
+  frameborder="0"
+  src="https://pythontutor.com/iframe-embed.html#code=class%20Solution%3A%0A%20%20%20%20def%20getRow%28self,%20rowIndex%3A%20int%29%3A%0A%20%20%20%20%20%20%20%20row%20%3D%20%5B1%5D%20%20%23%20The%20first%20element%20of%20each%20row%20is%20always%201%0A%0A%20%20%20%20%20%20%20%20for%20i%20in%20range%28rowIndex%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%20Calculate%20the%20elements%20of%20the%20current%20row%20based%20on%20the%20previous%20row%0A%20%20%20%20%20%20%20%20%20%20%20%20for%20j%20in%20range%28len%28row%29%20-%201,%200,%20-1%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20row%5Bj%5D%20%2B%3D%20row%5Bj%20-%201%5D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%20Append%201%20at%20the%20end%20of%20the%20current%20row%0A%20%20%20%20%20%20%20%20%20%20%20%20row.append%281%29%0A%0A%20%20%20%20%20%20%20%20return%20row%0A%0Aif%20__name__%3D%3D%22__main__%22%3A%0A%20%20%20%20numRows%20%3D%205%0A%20%20%20%20solve%20%3D%20Solution%28%29%0A%20%20%20%20print%28solve.getRow%28rowIndex%3DnumRows%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=45&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"
+>
+</iframe>
